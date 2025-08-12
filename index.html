@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./src/css/style.css">
-    <script src="https://kit.fontawesome.com/aa9d215442.js" crossorigin="anonymous"></script>
     <title>Adivinhe o número</title>
 </head>
 <body>
@@ -13,24 +13,40 @@
         <h1>Adivinhe o número</h1>
         
         <div class="result-panel">
-            <i class="fa-solid fa-angle-up maior"></i>
-            <i class="fa-solid fa-check certo"></i>
-            <i class="fa-solid fa-angle-down menor"></i>
+            <span class="material-symbols-outlined">
+                question_mark
+            </span>
+            <span class="material-symbols-outlined desaparece maior">
+                keyboard_arrow_up
+            </span>
+            <span class="material-symbols-outlined desaparece certo">
+                check
+            </span>
+            <span class="material-symbols-outlined desaparece menor">
+                keyboard_arrow_down
+            </span>
+        </div>
+
+        <div class="guess-panel">
+            <span id="guesses"></span>
         </div>
         
         <div class="input-panel">
             <form novalidate>
-                <label for="palpite">Palpite</label>
                 <input type="number" name="palpite" id="palpite" min="0" max="100" placeholder="Digite um número de 0 a 100">
                 <button type="submit">
-                    <i class="fa-solid fa-gamepad"></i>
+                    <span class="material-symbols-outlined">
+                        arrow_right_alt
+                    </span>
                 </button>
-                <span class="msgErro">Digite um número</span>
             </form>
+            <span class="msgErro desaparece">Digite um número</span>
         </div>
 
-        <button type="button">
-            <i class="fa-solid fa-arrow-rotate-left"></i>
+        <button type="button" class="restart-button disabled" disabled>
+            <span class="material-symbols-outlined">
+                replay
+            </span>
         </button>
     </main>
 
