@@ -96,7 +96,7 @@ form.addEventListener('submit', (event) => {
             msgErro.classList.remove('esconde-msgErro');
         }else {
             if(Number.isInteger(palpite)) {
-                if(!spnTentativas.textContent.includes(palpite)) {
+                if(!spnTentativas.textContent.includes(` ${palpite}`) && !spnTentativas.textContent.includes(`${palpite} `)) {
                     verificarResposta(palpite);
                     msgErro.classList.add('esconde-msgErro');
                     
