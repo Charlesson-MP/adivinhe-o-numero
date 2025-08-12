@@ -91,7 +91,10 @@ input {
     border-left: none;
     width: 15%;
     border-radius: 0 1rem 1rem 0;
+}
 
+.input-panel button:hover {
+    background-color: #616161;
 }
 
 .msgErro {
@@ -108,8 +111,13 @@ input {
     color: #3f3f3f;
 }
 
+.restart-button:hover {
+    color: #727272;
+}
+
 .restart-button span {
     font-size: 2rem;
+    font-weight: 700;
 }
 
 /* custom settings */
