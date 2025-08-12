@@ -1,0 +1,118 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body settings */
+body {
+    height: 100vh;
+    background: url("../images/background.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mozilla Text", sans-serif;
+    color: #3f3f3f;
+}
+
+/* main settings */
+main {
+    background-color: #ffffff8a;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    height: 22rem;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+/* title settings */
+h1 {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+/* result-panel settings */
+.result-panel span {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.maior, .menor {
+    background-color: rgba(219, 122, 122, 0.623);
+    color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+.certo {
+    background-color: rgba(0, 255, 0, 0.527);
+    color: rgb(0, 143, 0);
+    border-radius: 50%;
+}
+
+/* guess-panel */
+.guess-panel {
+    width: 90%;
+    height: 2rem;
+    border-radius: 5rem;
+    border: 2px solid rgb(95, 95, 95);
+}
+
+/* input-panel settings */
+.input-panel {
+    width: 14rem;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    width: 85%;
+    padding: .5rem;
+    border-radius: 1rem 0 0 1rem;
+    outline: none;
+    background-color: #ffffff67;
+    border-color: #3f3f3f;
+    border-style: solid;
+}
+
+.input-panel button {
+    background-color: #3f3f3f;
+    color: #fff;
+    border: 2px solid #3f3f3f;
+    border-left: none;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+
+}
+
+.msgErro {
+    color: rgb(255, 78, 78);
+    margin-left: 1rem;
+    font-size: .8rem;
+}
+
+/* restart-button settings */
+.restart-button {
+    margin-top: 1rem;
+    border: none;
+    background-color: transparent;
+    color: #3f3f3f;
+}
+
+.restart-button span {
+    font-size: 2rem;
+}
+
+/* custom settings */
+.desaparece {
+    display: none;
+}
