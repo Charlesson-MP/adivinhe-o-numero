@@ -36,7 +36,7 @@ main {
 /* title settings */
 h1 {
     font-size: 1.5rem;
-    margin-top: .5rem;
+    margin-top: 2rem;
 }
 
 /* result-panel settings */
@@ -46,6 +46,12 @@ h1 {
 }
 
 .maior, .menor {
+    background-color: rgba(122, 128, 219, 0.623);
+    color: rgb(4, 0, 255);
+    border-radius: 50%;
+}
+
+.lose {
     background-color: rgba(219, 122, 122, 0.623);
     color: rgb(255, 0, 0);
     border-radius: 50%;
@@ -59,15 +65,20 @@ h1 {
 
 /* guess-panel */
 .guess-panel {
-    width: 90%;
+    width: 95%;
     height: 2rem;
     border-radius: 5rem;
     border: 2px solid rgb(95, 95, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    font-size: .85rem;
 }
 
 /* input-panel settings */
 .input-panel {
-    width: 14rem;
+    width: 18rem;
 }
 
 form {
@@ -75,7 +86,7 @@ form {
 }
 
 input {
-    width: 85%;
+    width: 80%;
     padding: .5rem;
     border-radius: 1rem 0 0 1rem;
     outline: none;
@@ -89,7 +100,7 @@ input {
     color: #fff;
     border: 2px solid #3f3f3f;
     border-left: none;
-    width: 15%;
+    width: 20%;
     border-radius: 0 1rem 1rem 0;
 }
 
@@ -99,13 +110,12 @@ input {
 
 .msgErro {
     color: rgb(255, 78, 78);
-    margin-left: 1rem;
+    margin-left: .5rem;
     font-size: .8rem;
 }
 
 /* restart-button settings */
 .restart-button {
-    margin-top: 1rem;
     border: none;
     background-color: transparent;
     color: #3f3f3f;
@@ -123,4 +133,12 @@ input {
 /* custom settings */
 .desaparece {
     display: none;
+}
+
+.esconde-msgErro {
+    opacity: 0;
+}
+
+.desabilitado {
+    cursor: not-allowed;
 }
