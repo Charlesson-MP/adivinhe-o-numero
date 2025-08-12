@@ -25,6 +25,9 @@
             <span class="material-symbols-outlined desaparece menor">
                 keyboard_arrow_down
             </span>
+            <span class="material-symbols-outlined desaparece lose">
+                close
+            </span>
         </div>
 
         <div class="guess-panel">
@@ -33,17 +36,21 @@
         
         <div class="input-panel">
             <form novalidate>
-                <input type="number" name="palpite" id="palpite" min="0" max="100" placeholder="Digite um número de 0 a 100">
-                <button type="submit">
+                <input type="number" name="palpite" id="inpPalpite" min="0" max="100" placeholder="Digite um número entre 1 e 100">
+                <button type="submit" id="btnSubmit">
                     <span class="material-symbols-outlined">
                         arrow_right_alt
                     </span>
                 </button>
             </form>
-            <span class="msgErro desaparece">Digite um número</span>
+            <span class="msgErro esconde-msgErro"></span>
         </div>
 
-        <button type="button" class="restart-button disabled" disabled>
+        <div class="chances-panel">
+            <p>Tentativas: <span id="chances">10</span></p>
+        </div>
+
+        <button type="button" id="restart" class="restart-button desabilitado" disabled>
             <span class="material-symbols-outlined">
                 replay
             </span>
